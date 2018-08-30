@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+     <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/mdb.js" type="text/javascript"></script>
+    <script src="js/tether.js" type="text/javascript"></script>
+     <style type="text/css">
+       @media(max-width:767px){
+            .image1 {
+                display: none!important; 
+            }
+            .font1{
+                font-size: 20px;
+            }
+            .font2{
+                font-size: 18px;
+            }
+        }
+
+         @media(min-width:768px) and (max-width: 770px) {
+            .image1 {
+                display: block!important; 
+            }
+            .font1{
+                font-size: 20px;
+            }
+            .font2{
+                font-size: 18px;
+            }
+        }
+
+        .footer{
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+           
+
+        }
+
+                    /* Dropdown Button */
+            .dropbtn {
+                color: grey !important;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* The container <div> - needed to position the dropdown content */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            /* Dropdown Content (Hidden by Default) */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .greytxt {
+                color: grey!important;
+
+            }
+            .unjcolor-txt {
+                color: #006F45 !important;
+            }
+    </style>
+
+
+</head>
+
+<header>
+
+    <!--Jumbotron-->
+        <div style="margin-bottom: 0px;margin-top: 0 !important;background-color:#006F45;height: 150px;padding-top: 10px !important;padding-right: 40px !important" class="jumbotron jumbotron-fluid">
+           
+            <div style="margin-left: 0px" class="container mt-4 mb-2">
+                <div class="row">
+                    <div class="col-sm-1 mr-3">
+                    <img style="height: 73px;width: 73px" src="unj.png" width="1350px" class="image1 mt-2">
+                    </div>
+                    <div  class="col-sm-5">
+                    <span class="inline-block"><h4 style="margin-bottom: 0px" class="h4-reponsive mb-4 mt-2 white-text font-italic font1">Sistem Informasi Alumni</h4><h4 class="h4-reponsive mb-4 mt-2 white-text font-bold font2">Universitas Negeri Jakarta</h4></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Jumbotron-->                   
+    <div>
+    <nav style="background-color: #EFE037" class="navbar navbar-expand-lg navbar-dark">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span style="color:white" class="navbar-toggler-icon"></span>
+            </button>
+            <div style="float: left;margin-left: 30px"  class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a style="color: grey" class="nav-link" href="#"><b>Beranda</b><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: grey" class="nav-link" href="#"><b>Data Alumni</b></a>
+                    </li>
+                     <li class='nav-item dropdown'>
+                        <a class='nav-link dropdown-toggle dropbtn' href='#'' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        <b>Berita Alumni</b>
+                        </a>
+                        <div class=' dropdown-content' >
+                            <a class='dropdown-item' href='#'>Info Alumni</a>
+                              <a class='dropdown-item' href='#'> Tips Karir </a>
+                            <a class='dropdown-item' href='#'> Lowongan Kerja</a>
+                        </div>
+                    </li>
+                    <li class='nav-item dropdown'>
+                        <a class='nav-link dropdown-toggle dropbtn' href='#'' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        <b>Berita Prodi</b>
+                        </a>
+                        <div class=' dropdown-content' >
+                            <a class='dropdown-item' href='#'>Ilmu Komputer</a>
+                              <a class='dropdown-item' href='#'> Pendidikan Matematika </a>
+                            <a class='dropdown-item' href='#'> Matematika Murni</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link unjcolor-txt"><b>Profil</b><i class="fa fa-user-o unjcolor-txt " data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link unjcolor-txt"><b>Forum</b><i class="fa fa-users unjcolor-txt" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link unjcolor-txt"><b>Keluar</b><i class="fa fa-arrow-circle-o-right unjcolor-txt" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></i></a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    </div>
+</header>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script > 
+                // Tooltips Initialization
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+
+<!--Footer-->
+<footer style="background-color:#006F45 "  class="footer page-footer center-on-small-only pt-0">
+
+    <!--Footer Links-->
+    <div style="background-color: #006F45" class="container">
+
+        <!--First row-->
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-12">
+
+                <div class="footer-socials mb-5 flex-center">
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter fa-lg white-text mr-md-4"> </i></a>
+                    <!--Google +-->
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i></a>
+                    <!--Linkedin-->
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                    <!--Instagram-->
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram fa-lg white-text mr-md-4"> </i></a>
+                    <!--Pinterest-->
+                    <a class="icons-sm pin-ic"><i class="fa fa-pinterest fa-lg white-text"> </i></a>
+                </div>
+            </div>
+            <!--/First column-->
+        </div>
+        <!--/First row-->
+    </div>
+    <!--/Footer Links-->
+
+    <!--Copyright-->
+    <div style="background-color:#EFE037 " class="footer-copyright">
+        <div class="container-fluid greytxt">
+            <a><b>© 2017 Copyright: Siluni Universitas Negeri Jakarta</b> </a>
+        </div>
+    </div>
+    <!--/Copyright-->
+
+</footer>
+<!--/Footer-->
+                
+</html>
