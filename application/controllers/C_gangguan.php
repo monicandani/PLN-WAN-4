@@ -187,12 +187,17 @@ class C_gangguan extends CI_Controller{
         $this->email->from('sekretariatdki.sm@pln.co.id', 'Informasi AMS');    // Email dan nama pegirim.
         $this->email->to('moncandani@gmail.com');                       // Penerima email.
  
-        
-        // Subject email.
+        // $isi_email = 'Data gangguan pada area '.$this->m_data_gangguan->tampil_layanan($id_layanan)->lokasi.' telah ditambahkan pada tanggal '.$open_date.' jam '.$open_time;
+
+        $isi_email = 'Data Gangguan baru telah ditambahkan pada : </br></br>'.
+					 'Area  :'.$this->m_data_gangguan->tampil_layanan($id_layanan)->lokasi.'</br>'.
+					 'Tanggal : '.$open_date.'</br>'.
+					 'Pukul : '.$open_time.'</br>';
+					        // Subject email.
         $this->email->subject('Notifikasi Penambahan Data Gangguan');
  
         // Isi email. Bisa dengan format html.
-        $this->email->message('Data gangguan baru telah ditambahkan');
+        $this->email->message($isi_email);
  
         if ($this->email->send())
         {

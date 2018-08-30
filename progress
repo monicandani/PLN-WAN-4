@@ -1,0 +1,23 @@
+progress report 30/08 :
+
+3 role user (admin, petugas input, petugas viewer)
+-admin bisa semua
+-petugas input nambah untuk menambah data gangguan dan keluhan dan pencarian 
+-user menjadi petugas viewer (petugas viewer menu nya ada beranda isinya gangguan yang lagi penanganan di area nya, histori di area nya, keluar)
+body email data gangguan area apa tanggal berapa 
+email kalau progress sudah selesai
+di data yang masih penanganan tidak usah ada eksport
+pencarian hanya untuk data yang sudah selesai
+menu layanan diganti menjadi sid
+no karyawan diganti menjadi nip
+beranda ganti jadi dashboard, ada 2 kolom, kolom area dan gangguan yg masih penanganan
+masuk menjadi login 
+
+to do list :
+laporan minggu depan ada absen sama diary
+surat selesai magang di sdm
+
+aplikasi anak pkl yang pernah di pln :
+inventaris pc laptop/aset
+sistem informasi monitoring server
+pelita peta listrik jakarta
