@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    &copy; 2018 | By : <a href="https://www.instagram.com/default_unj/" target="_blank">DEFAULT</a>
+                    &copy; 2018 | By : <a href="https://www.instagram.com/default_unj/" target="_blank">Ilmu Komputer UNJ 2015</a>
                 </div>
             </div>
         </div>
