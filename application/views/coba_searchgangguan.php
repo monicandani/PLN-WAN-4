@@ -22,7 +22,7 @@
                             <option value="durasi">Durasi</option>
                           </select>
                     </div>
-
+<!-- tes -->
 <div class="form-group" style="display: none" id="bulan1">
                           <label for="prodi">Bulan :</label>
                           <select class="form-control" id="jenis gangguan" name="jenis gangguan">
