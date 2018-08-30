@@ -386,6 +386,7 @@ class C_keluhan extends CI_Controller{
 		}	
 
 			$data=array(
+			'title'=>'Pencarian Data - PLN',
             'status_user' => $this->session->userdata('status_user'),
         	'keluhan' => $hasil
         	);
