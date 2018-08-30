@@ -184,7 +184,7 @@ class C_gangguan extends CI_Controller{
         $this->load->library('email', $config);
  
         // Pengirim dan penerima email.
-        $this->email->from('sekretariatdki.sm@pln.co.id', 'Informasi AMS');    // Email dan nama pegirim.
+        $this->email->from('sekretariatdki.sm@pln.co.id', 'Informasi Penambahan Data Gangguan');    // Email dan nama pegirim.
         $this->email->to('moncandani@gmail.com');                       // Penerima email.
  
         
@@ -206,8 +206,8 @@ class C_gangguan extends CI_Controller{
 
 		redirect('c_gangguan/form_data_gangguan');
 		echo " <script>
-	                alert('Registrasi sukses. Keluhan berhasil ditambahkan');
-	                window.location='form_data_keluhan'
+	                alert('Registrasi sukses. Gangguan berhasil ditambahkan');
+	                window.location='form_data_gangguan'
 	                </script>";
 		
 		} else {
@@ -215,7 +215,7 @@ class C_gangguan extends CI_Controller{
         	'status_user' => $this->session->userdata('status_user'),
             'error_validation' => validation_errors(),
             'get_layanan' => $this->m_data_gangguan->get_layanan(),
-		  	'get_jeniskeluhan' => $this->m_data_gangguan->get_jenisgangguan()
+		  	'get_jenisgangguan' => $this->m_data_gangguan->get_jenisgangguan()
         	);
 		  $this->load->view('element/header',$data);
 		  $this->load->view('form_tambah_data_gangguan', $data);
