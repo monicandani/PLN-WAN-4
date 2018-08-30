@@ -6,6 +6,7 @@ class M_data_gangguan extends CI_Model{
 		$this->db->select('*');
 		$this->db->where('isDelete', 'no');
 		$this->db->where('isShow', 'yes');
+		$this->db->order_by('id_jenisgangguan', 'DESC');
 		$query = $this->db->get('tb_jenisgangguan');
 		if($query->num_rows()>0)
 		{

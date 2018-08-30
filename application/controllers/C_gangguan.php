@@ -184,15 +184,20 @@ class C_gangguan extends CI_Controller{
         $this->load->library('email', $config);
  
         // Pengirim dan penerima email.
-        $this->email->from('sekretariatdki.sm@pln.co.id', 'Informasi AMS');    // Email dan nama pegirim.
+        $this->email->from('sekretariatdki.sm@pln.co.id', 'Informasi Penambahan Data Gangguan');    // Email dan nama pegirim.
         $this->email->to('moncandani@gmail.com');                       // Penerima email.
  
-        
-        // Subject email.
+        // $isi_email = 'Data gangguan pada area '.$this->m_data_gangguan->tampil_layanan($id_layanan)->lokasi.' telah ditambahkan pada tanggal '.$open_date.' jam '.$open_time;
+
+        $isi_email = 'Data Gangguan baru telah ditambahkan pada : </br></br>'.
+					 'Area  :'.$this->m_data_gangguan->tampil_layanan($id_layanan)->lokasi.'</br>'.
+					 'Tanggal : '.$open_date.'</br>'.
+					 'Pukul : '.$open_time.'</br>';
+					        // Subject email.
         $this->email->subject('Notifikasi Penambahan Data Gangguan');
  
         // Isi email. Bisa dengan format html.
-        $this->email->message('Data gangguan baru telah ditambahkan');
+        $this->email->message($isi_email);
  
         if ($this->email->send())
         {
@@ -206,8 +211,8 @@ class C_gangguan extends CI_Controller{
 
 		redirect('c_gangguan/form_data_gangguan');
 		echo " <script>
-	                alert('Registrasi sukses. Keluhan berhasil ditambahkan');
-	                window.location='form_data_keluhan'
+	                alert('Registrasi sukses. Gangguan berhasil ditambahkan');
+	                window.location='form_data_gangguan'
 	                </script>";
 		
 		} else {
@@ -215,7 +220,7 @@ class C_gangguan extends CI_Controller{
         	'status_user' => $this->session->userdata('status_user'),
             'error_validation' => validation_errors(),
             'get_layanan' => $this->m_data_gangguan->get_layanan(),
-		  	'get_jeniskeluhan' => $this->m_data_gangguan->get_jenisgangguan()
+		  	'get_jenisgangguan' => $this->m_data_gangguan->get_jenisgangguan()
         	);
 		  $this->load->view('element/header',$data);
 		  $this->load->view('form_tambah_data_gangguan', $data);

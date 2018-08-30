@@ -77,7 +77,13 @@
                                                 
                                               <?php endif; ?>
                                             </td>
-                                            <td><?php echo $g->durasi ?></td>
+                                            <td><?php 
+                                            if ($g->durasi == "0:00:00") {
+                                              echo "-";
+                                            } else{
+                                              echo $g->durasi;  
+                                            }
+                                             ?></td>
                                             <?php if ($status_user == 'Admin' || $status_user == 'Petugas') { ?>
                                             <td> 
                                               <div class="btn-group">
@@ -395,7 +401,7 @@
                 }
             ],
             
-            "order": [[ 0, "desc" ]]
+            "order": [[ 6, "asc" ]]
           });
         });
         
