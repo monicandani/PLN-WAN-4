@@ -120,7 +120,7 @@
                                     <a class='dropdown-item' href=".base_url('c_gangguan/jenisgangguan')." style='color: black'>KATEGORI GANGGUAN</a>
                                     <a class='dropdown-item' href=".base_url('c_keluhan/jeniskeluhan')." style='color: black'>KATEGORI KELUHAN</a>
                                     <a class='dropdown-item' href=".base_url('c_layanan/jenislayanan')." style='color: black'>KATEGORI LAYANAN</a>
-                                    <a class='dropdown-item' href=".base_url('c_layanan/form_layanan')." style='color: black'>LAYANAN</a>
+                                    <a class='dropdown-item' href=".base_url('c_layanan/form_layanan')." style='color: black'>SID</a>
                                     <a class='dropdown-item' href=".base_url('c_user/user')." style='color: black'>PENGGUNA</a>
                                     <div class='dropdown-divider'></div>
                                     <a class='dropdown-item' href=".('https://drive.google.com/open?id=17IpB62pc7YjAUHb6Rqw44mj0hrQgzUbm')." style='color: black' method='post' target='_blank'>USER MANUAL</a>
