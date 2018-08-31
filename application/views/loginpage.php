@@ -59,13 +59,14 @@
                 <div class="col-md-6 col-sm-6" style="margin-right:200 ; margin-left:200; margin-top:50px; ">
                     <div class="panel panel-primary" style="box-shadow: 8px 8px 5px #888888">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Masuk &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                            <h3 class="panel-title"> 
+
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  LOGIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></h3>
                         </div>
                         <div class="panel-body">
                         <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input placeholder="ID Karyawan" type="text" name="no_karyawan" id="id_karyawan" class="form-control" />
+                        <input placeholder="NIP" type="text" name="no_karyawan" id="id_karyawan" class="form-control" />
                         </div>
                         <p>
                         <div class="input-group">

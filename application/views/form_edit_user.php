@@ -12,7 +12,7 @@
                     <?php foreach($user as $u){ ?>
                     <form action="<?php echo base_url();?>c_user/update_user" method="post">
                         <div class="form-group">
-                          <label for="ID">No Karyawan<font color="red">*</font></label>
+                          <label for="ID">NIP<font color="red">*</font></label>
                           <input  class="form-control" type="text" name="no_karyawan" value="<?php echo $u->no_karyawan ?>">
                            <input  class="form-control" type="hidden" name="id_karyawan" value="<?php echo $u->id_karyawan ?>">
                         </div>
