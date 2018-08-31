@@ -15,6 +15,20 @@ class M_data_user extends CI_Model{
 
 	}
 
+	function get_layanan() {
+    	$this->db->distinct();
+		$this->db->select('*');
+		$this->db->where('isDelete', 'no');
+		$this->db->order_by('lokasi', 'ASC');
+		$query = $this->db->get('tb_layanan');
+		if($query->num_rows()>0)
+		{
+			return $query->result();
+		} else {
+			return $query->result();
+		}
+    }
+
 	function input_user($data,$table) {
 		$this->db->insert($table, $data);
 	}

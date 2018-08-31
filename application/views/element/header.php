@@ -83,7 +83,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="nav navbar-nav ml-auto">
                                 <?php 
-                                if($status_user == 'Admin') {
+                                if($status_user == 'Admin' || $status_user == 'Input') {
                                     echo"
                                     <li class='nav-item'> 
                                     <a  class='nav-link' href=".base_url('c_main/home')." style='color:white' >BERANDA</a>

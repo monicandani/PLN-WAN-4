@@ -6,7 +6,7 @@ class M_data_keluhan extends CI_Model{
 		$this->db->select('*');
 		$this->db->where('isDelete', 'no');
 		$this->db->where('isShow', 'yes');
-		$this->db->order_by('id_jeniskeluhan', 'DESC')
+		$this->db->order_by('id_jeniskeluhan', 'DESC');
 		$query = $this->db->get('tb_jeniskeluhan');
 		if($query->num_rows()>0)
 		{
